@@ -73,7 +73,7 @@ earth.init = function() {
     texLoaded = true;
     onImageLoaded();
   };
-  img.src = '/mercator-tex.jpg';
+  img.src = 'mercator-tex.jpg';
 //  img.src = '/mercator-tex-512.jpg';
   
   nightTexture = gl.createTexture();
@@ -88,7 +88,7 @@ earth.init = function() {
     nightLoaded = true;
     onImageLoaded();
   };
-  nightImg.src = '/nightearth-4096.png';
+  nightImg.src = 'nightearth-4096.png';
  // nightImg.src = '/nightearth-512.jpg';
   
   //generate a uvsphere bottom up, CCW order

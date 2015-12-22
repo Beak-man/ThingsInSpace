@@ -35,7 +35,7 @@
 
   
   try {
-    var satCruncher = new Worker('/scripts/sat-cruncher.js');
+    var satCruncher = new Worker('scripts/sat-cruncher.js');
   } catch (E) {
     browserUnsupported();
   }
@@ -109,7 +109,7 @@
     dotShader.uCamMatrix = gl.getUniformLocation(dotShader, 'uCamMatrix');
     dotShader.uPMatrix = gl.getUniformLocation(dotShader, 'uPMatrix');
     
-    $.get('/TLE.json?fakeparameter=to_avoid_browser_cache2', function(resp) {
+    $.get('TLE.json?fakeparameter=to_avoid_browser_cache2', function(resp) {
       var startTime = new Date().getTime();
       
      

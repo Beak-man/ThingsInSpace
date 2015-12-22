@@ -35,15 +35,15 @@ $shaderFiles = [
 
 foreach($scriptFiles as $f) {
   echo '// **** ' . $f . " ***\r\n";
-  echo file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/scripts/' . $f);
-  echo "\r\n// **** end " . $f . " ***\r\n\r\n";
-} 
+  echo file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/stuffinspace/scripts/' . $f);
+  echo "\r\n// **** end " . $f . " ***\r\n\r\n"; 
+}
 
 $shaderData = [];
 foreach($shaderFiles as $f) {
   $shaderData[] = [
     'name' => $f,
-    'code' => file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/shaders/' . $f)
+    'code' => file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/stuffinspace/shaders/' . $f)
   ];
 }
 ?>
